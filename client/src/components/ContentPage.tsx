@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import SearchShortcut from "./SearchShortcut";
+import ScrollToTop from "./ScrollToTop";
 import Logo from "./Logo";
 
 interface ContentPageProps {
@@ -63,6 +64,7 @@ export default function ContentPage({
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

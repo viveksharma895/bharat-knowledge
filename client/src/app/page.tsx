@@ -8,6 +8,7 @@ import Multilingual from "@/components/Multilingual";
 import SubmissionCallout from "@/components/SubmissionCallout";
 import Footer from "@/components/Footer";
 import SearchShortcut from "@/components/SearchShortcut";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <SubmissionCallout />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

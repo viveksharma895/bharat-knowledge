@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Logo from "./Logo";
 import ISTClock from "./ISTClock";
@@ -7,6 +8,18 @@ import { navItems } from "@/lib/site";
 
 export default function Header() {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
     <>
@@ -37,9 +50,54 @@ export default function Header() {
             })}
           </nav>
 
-          <ISTClock />
+          <div className="flex items-center gap-3">
+            <ISTClock />
+            <button
+              type="button"
+              onClick={() => setOpen((v) => !v)}
+              aria-label={open ? "Close menu" : "Open menu"}
+              aria-expanded={open}
+              className="xl:hidden w-11 h-11 rounded-xl flex items-center justify-center border border-brand-border/70 bg-white/60 hover:bg-black/5 transition-colors cursor-pointer text-brand-navy"
+            >
+              <span className="material-symbols-outlined text-[24px]">
+                {open ? "close" : "menu"}
+              </span>
+            </button>
+          </div>
         </div>
       </header>
+
+      {open && (
+        <div className="xl:hidden fixed inset-0 top-[84px] z-30 bg-brand-cream/95 backdrop-blur-md overflow-y-auto">
+          <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-1">
+            {navItems.map((item) => {
+              const active =
+                pathname === item.href || pathname.startsWith(item.href + "/");
+              return (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`flex items-center justify-between px-4 py-4 rounded-xl font-medium text-base transition-colors ${
+                    active
+                      ? "bg-brand-navy/5 text-brand-navy font-semibold"
+                      : "text-brand-slate hover:bg-black/5 hover:text-brand-navy"
+                  }`}
+                >
+                  <span className="flex items-center gap-3">
+                    <span className="material-symbols-outlined text-[20px] text-brand-saffron">
+                      {item.icon}
+                    </span>
+                    {item.label}
+                  </span>
+                  {active && (
+                    <span className="w-2 h-2 rounded-full bg-brand-saffron" />
+                  )}
+                </a>
+              );
+            })}
+          </nav>
+        </div>
+      )}
     </>
   );
 }

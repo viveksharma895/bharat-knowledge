@@ -14,7 +14,7 @@ export default function Logo({ variant = "dark" }: LogoProps) {
         width="240"
         height="48"
         fill="none"
-        className="group-hover:opacity-90 transition-opacity"
+        className="group-hover:opacity-90 transition-opacity w-auto max-w-[200px] sm:max-w-[240px] h-[48px]"
       >
         <g transform="translate(4, 4)">
           <rect width="40" height="40" rx="10" fill="#0F172A" />

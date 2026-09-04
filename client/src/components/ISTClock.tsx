@@ -19,8 +19,10 @@ const monthNames = [
 
 export default function ISTClock() {
   const [now, setNow] = useState(() => new Date());
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const timer = setInterval(() => setNow(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
@@ -35,12 +37,24 @@ export default function ISTClock() {
       <span className="material-symbols-outlined text-[14px] text-brand-saffron">
         schedule
       </span>
-      <span className="font-semibold tracking-tight">
-        {parts.day}.{monthNames[parts.month]}.{parts.year}
+      <span className="hidden sm:inline font-semibold tracking-tight">
+        {mounted ? (
+          <>
+            {parts.day}.{monthNames[parts.month]}.{parts.year}
+          </>
+        ) : (
+          <>&nbsp;</>
+        )}
       </span>
-      <span className="text-slate-300 mx-0.5">|</span>
+      <span className="hidden sm:inline text-slate-300 mx-0.5">|</span>
       <span className="font-semibold tracking-tight tabular-nums">
-        {parts.hour}:{parts.minute}:{parts.second}
+        {mounted ? (
+          <>
+            {parts.hour}:{parts.minute}:{parts.second}
+          </>
+        ) : (
+          <>&nbsp;</>
+        )}
       </span>
       <span className="font-bold text-brand-navy ml-0.5">{parts.period}</span>
     </div>
