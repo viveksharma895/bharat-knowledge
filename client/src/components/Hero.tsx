@@ -23,8 +23,7 @@ export default function Hero() {
         </div>
         <div className="text-center max-w-4xl mx-auto mb-10">
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-brand-navy leading-[1.08] mb-6">
-            Knowledge About India,{" "}
-            <br />
+            Knowledge About India, <br />
             <span className="italic font-serif font-normal text-transparent bg-clip-text bg-gradient-to-r from-brand-saffron via-amber-700 to-brand-navy">
               Source-Backed &amp; Open For All.
             </span>
@@ -142,8 +141,8 @@ function KnowledgeGraph() {
             </h3>
           </div>
           <p className="text-xs sm:text-sm text-brand-slate mt-0.5">
-            Explore semantic cross-references between leaders, treaties,
-            science programs, and institutions.
+            Explore semantic cross-references between leaders, treaties, science
+            programs, and institutions.
           </p>
         </div>
         <div className="flex items-center gap-2 shrink-0">
@@ -185,23 +184,12 @@ function KnowledgeGraph() {
               <stop offset="0%" stopColor="#2563eb" stopOpacity="0.6" />
               <stop offset="100%" stopColor="#0a1324" stopOpacity="0.15" />
             </linearGradient>
-            <radialGradient
-              id="core-glow-pulsing"
-              cx="50%"
-              cy="50%"
-              r="50%"
-            >
+            <radialGradient id="core-glow-pulsing" cx="50%" cy="50%" r="50%">
               <stop offset="0%" stopColor="#ea580c" stopOpacity="0.24" />
               <stop offset="50%" stopColor="#f97316" stopOpacity="0.08" />
               <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
             </radialGradient>
-            <linearGradient
-              id="radar-beam"
-              x1="0%"
-              y1="0%"
-              x2="100%"
-              y2="100%"
-            >
+            <linearGradient id="radar-beam" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#ea580c" stopOpacity="0.25" />
               <stop offset="100%" stopColor="#ea580c" stopOpacity="0" />
             </linearGradient>
@@ -218,38 +206,15 @@ function KnowledgeGraph() {
                 <feMergeNode in="SourceGraphic" />
               </feMerge>
             </filter>
-            <path
-              id="path-core-to-kalam"
-              d="M 500 270 Q 370 170 230 115"
-            />
-            <path
-              id="path-core-to-isro"
-              d="M 500 270 Q 640 170 780 115"
-            />
-            <path
-              id="path-core-to-ambedkar"
-              d="M 500 270 Q 330 360 190 410"
-            />
-            <path
-              id="path-core-to-acts"
-              d="M 500 270 Q 660 360 810 410"
-            />
-            <path
-              id="path-kalam-to-isro"
-              d="M 230 115 Q 500 60 780 115"
-            />
-            <path
-              id="path-ambedkar-to-acts"
-              d="M 190 410 Q 500 470 810 410"
-            />
+            <path id="path-core-to-kalam" d="M 500 270 Q 370 170 230 115" />
+            <path id="path-core-to-isro" d="M 500 270 Q 640 170 780 115" />
+            <path id="path-core-to-ambedkar" d="M 500 270 Q 330 360 190 410" />
+            <path id="path-core-to-acts" d="M 500 270 Q 660 360 810 410" />
+            <path id="path-kalam-to-isro" d="M 230 115 Q 500 60 780 115" />
+            <path id="path-ambedkar-to-acts" d="M 190 410 Q 500 470 810 410" />
           </defs>
 
-          <circle
-            cx="500"
-            cy="270"
-            r="240"
-            fill="url(#core-glow-pulsing)"
-          />
+          <circle cx="500" cy="270" r="240" fill="url(#core-glow-pulsing)" />
           <circle
             className="animate-ripple-1"
             cx="500"
@@ -479,92 +444,52 @@ function KnowledgeGraph() {
           <circle cx="870" cy="265" r="4.5" fill="#ea580c" />
 
           <circle r="4" fill="#f97316" filter="url(#glow-filter)">
-            <animateMotion
-              dur="3.2s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="3.2s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-core-to-kalam" />
             </animateMotion>
           </circle>
           <circle r="3" fill="#ffffff">
-            <animateMotion
-              dur="3.2s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="3.2s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-core-to-kalam" />
             </animateMotion>
           </circle>
           <circle r="4" fill="#10b981" filter="url(#glow-filter)">
-            <animateMotion
-              dur="2.8s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="2.8s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-core-to-isro" />
             </animateMotion>
           </circle>
           <circle r="3" fill="#ffffff">
-            <animateMotion
-              dur="2.8s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="2.8s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-core-to-isro" />
             </animateMotion>
           </circle>
           <circle r="4" fill="#3b82f6" filter="url(#glow-filter)">
-            <animateMotion
-              dur="3.6s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="3.6s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-core-to-ambedkar" />
             </animateMotion>
           </circle>
           <circle r="3" fill="#ffffff">
-            <animateMotion
-              dur="3.6s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="3.6s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-core-to-ambedkar" />
             </animateMotion>
           </circle>
           <circle r="4" fill="#f59e0b" filter="url(#glow-filter)">
-            <animateMotion
-              dur="3.4s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="3.4s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-core-to-acts" />
             </animateMotion>
           </circle>
           <circle r="3" fill="#ffffff">
-            <animateMotion
-              dur="3.4s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="3.4s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-core-to-acts" />
             </animateMotion>
           </circle>
           <circle r="3.5" fill="#ea580c" filter="url(#glow-filter)">
-            <animateMotion
-              dur="4.8s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="4.8s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-kalam-to-isro" />
             </animateMotion>
           </circle>
           <circle r="3.5" fill="#2563eb" filter="url(#glow-filter)">
-            <animateMotion
-              dur="5.2s"
-              repeatCount="indefinite"
-              rotate="auto"
-            >
+            <animateMotion dur="5.2s" repeatCount="indefinite" rotate="auto">
               <mpath href="#path-ambedkar-to-acts" />
             </animateMotion>
           </circle>
@@ -582,9 +507,7 @@ function KnowledgeGraph() {
           </div>
           <div className="px-3 py-1 rounded-full bg-white/95 border border-brand-border text-[10px] font-mono font-semibold text-brand-saffron shadow-subtle flex items-center gap-1.5 backdrop-blur-md">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-saffron animate-ping" />
-            <span className="material-symbols-outlined text-[13px]">
-              share
-            </span>
+            <span className="material-symbols-outlined text-[13px]">share</span>
             142,800+ CITATION EDGES
           </div>
         </div>

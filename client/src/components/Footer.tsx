@@ -1,11 +1,12 @@
 import Logo from "./Logo";
 
 const taxonomyLinks = [
-  { label: "People & Leaders", href: "#featured-people" },
-  { label: "Polity & Statecraft", href: "#explore-categories" },
-  { label: "Places & Geography", href: "#explore-categories" },
-  { label: "Scientific Institutions", href: "#explore-categories" },
-  { label: "History & Milestones", href: "#explore-categories" },
+  { label: "People & Leaders", href: "/people" },
+  { label: "Polity & Statecraft", href: "/politics" },
+  { label: "Places & Geography", href: "/places" },
+  { label: "Organizations & Institutions", href: "/organizations" },
+  { label: "History & Milestones", href: "/history" },
+  { label: "Culture & Traditions", href: "/culture" },
 ];
 
 const platformLinks = [

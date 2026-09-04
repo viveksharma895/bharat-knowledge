@@ -7,7 +7,7 @@ export default function Logo({ variant = "dark" }: LogoProps) {
   const taglineColor = variant === "light" ? "#94A3B8" : "#475569";
 
   return (
-    <a className="flex items-center gap-3 group shrink-0" href="#">
+    <a className="flex items-center gap-3 group shrink-0" href="/">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 240 48"
