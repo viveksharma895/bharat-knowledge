@@ -8,7 +8,11 @@
   ],
   "scripts": {
     "dev:client": "npm --workspace client run dev",
+    "dev:client:turbo": "npm --workspace client run dev:turbo",
     "dev:server": "npm --workspace server run start:dev",
-    "dev:admin": "npm --workspace admin run dev"
+    "dev:admin": "npm --workspace admin run dev",
+    "dev:client:clean": "powershell -ExecutionPolicy Bypass -File scripts/dev-client.ps1",
+    "dev:client:clean:turbo": "powershell -ExecutionPolicy Bypass -File scripts/dev-client.ps1 -turbo",
+    "dev": "powershell -ExecutionPolicy Bypass -File scripts/dev-all.ps1"
   }
 }
