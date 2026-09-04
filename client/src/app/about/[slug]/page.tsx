@@ -1,21 +1,41 @@
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import ContentPage from "@/components/ContentPage";
+import { aboutLinks } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Culture | Bharat Knowledge | Open Knowledge Platform",
-  description:
-    "Living cultures, languages, arts, and traditions of the subcontinent.",
-};
+type PageProps = { params: Promise<{ slug: string }> };
 
-export default function CulturePage() {
+const subpages = aboutLinks.filter((l) => l.href !== "/about");
+
+export function generateStaticParams() {
+  return subpages.map((s) => ({
+    slug: s.href.split("/").filter(Boolean)[1],
+  }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const page = subpages.find((s) => s.href.endsWith("/" + slug));
+  if (!page) return { title: "Not Found" };
+  return {
+    title: `${page.label} | Bharat Knowledge | Open Knowledge Platform`,
+    description: `Learn about ${page.label}.`,
+  };
+}
+
+export default async function AboutSlugPage({ params }: PageProps) {
+  const { slug } = await params;
+  const page = subpages.find((s) => s.href.endsWith("/" + slug));
+  if (!page) notFound();
+
   return (
     <ContentPage
-      eyebrow="Culture"
-      title="Culture & Traditions"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      eyebrow="About"
+      title={page.label}
+      description={`${page.label}. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
     >
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-4">
-        A Living Mosaic
+        {page.label}
       </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
@@ -29,7 +49,7 @@ export default function CulturePage() {
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-6">
-        Languages &amp; Arts
+        Our Commitment
       </h2>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -44,7 +64,7 @@ export default function CulturePage() {
         sit amet, consectetur, adipisci velit.
       </p>
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-6">
-        Enduring Traditions
+        Get Involved
       </h2>
       <p>
         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis

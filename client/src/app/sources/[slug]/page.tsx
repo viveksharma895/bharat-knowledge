@@ -1,21 +1,39 @@
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import ContentPage from "@/components/ContentPage";
+import { sourceLinks } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Politics | Bharat Knowledge | Open Knowledge Platform",
-  description:
-    "Constitutional precedents and political history that shaped the subcontinent.",
-};
+type PageProps = { params: Promise<{ slug: string }> };
 
-export default function PoliticsPage() {
+export function generateStaticParams() {
+  return sourceLinks.map((s) => ({
+    slug: s.href.split("/").filter(Boolean)[1],
+  }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const src = sourceLinks.find((s) => s.href.endsWith("/" + slug));
+  if (!src) return { title: "Not Found" };
+  return {
+    title: `${src.label} | Bharat Knowledge | Open Knowledge Platform`,
+    description: `Learn more about ${src.label} and how it informs Bharat Knowledge.`,
+  };
+}
+
+export default async function SourceSlugPage({ params }: PageProps) {
+  const { slug } = await params;
+  const src = sourceLinks.find((s) => s.href.endsWith("/" + slug));
+  if (!src) notFound();
+
   return (
     <ContentPage
-      eyebrow="Politics"
-      title="Politics & Statecraft"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      eyebrow="Sources"
+      title={src.label}
+      description={`${src.label}. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
     >
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-4">
-        The Art of Governance
+        {src.label} Overview
       </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
@@ -29,7 +47,7 @@ export default function PoliticsPage() {
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-6">
-        Constitutional Precedents
+        How We Use This Source
       </h2>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -44,7 +62,7 @@ export default function PoliticsPage() {
         sit amet, consectetur, adipisci velit.
       </p>
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-6">
-        Neutral &amp; Impartial
+        Quality &amp; Verification
       </h2>
       <p>
         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis

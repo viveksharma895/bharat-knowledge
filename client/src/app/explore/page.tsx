@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import ContentPage from "@/components/ContentPage";
+import { exploreSections } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Explore | Bharat Knowledge | Open Knowledge Platform",
   description:
-    "Explore the full breadth of the Bharat Knowledge archive — people, politics, places, organizations, history, and culture.",
+    "Discover people, places, organizations, history, and culture across the Bharat Knowledge archive.",
 };
 
 export default function ExplorePage() {
@@ -15,7 +16,7 @@ export default function ExplorePage() {
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     >
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-4">
-        A Breadth of Knowledge
+        Browse by Category
       </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
@@ -23,41 +24,42 @@ export default function ExplorePage() {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <h2 className="font-serif text-2xl font-bold text-brand-navy pt-6">
-        Structured &amp; Verifiable
-      </h2>
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo.
-      </p>
-      <p>
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-        sit amet, consectetur, adipisci velit.
-      </p>
-      <h2 className="font-serif text-2xl font-bold text-brand-navy pt-6">
-        Open By Design
-      </h2>
-      <p>
-        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis
-        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-        nihil molestiae consequatur.
-      </p>
-      <p>
-        Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero
-        eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-        praesentium voluptatum deleniti atque corrupti quos dolores et quas
-        molestias excepturi sint occaecati cupiditate non provident.
-      </p>
+      <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {exploreSections.map((section) => (
+          <a
+            key={section.href}
+            href={section.href}
+            className="group rounded-2xl border border-brand-border bg-white p-5 hover:border-brand-saffron/40 hover:shadow-card transition-all"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              <span className="material-symbols-outlined text-[22px] text-brand-saffron">
+                {section.icon}
+              </span>
+              <h3 className="font-serif text-lg font-bold text-brand-navy">
+                {section.label}
+              </h3>
+            </div>
+            <p className="text-sm text-brand-slate mb-4">{section.description}</p>
+            <ul className="space-y-1">
+              {section.children.slice(0, 4).map((child) => (
+                <li key={child.href} className="flex items-center gap-2 text-xs text-brand-slate">
+                  <span className="w-1 h-1 rounded-full bg-brand-saffron/60" />
+                  {child.label}
+                </li>
+              ))}
+              {section.children.length > 4 && (
+                <li className="text-xs text-brand-saffron font-medium">
+                  +{section.children.length - 4} more
+                </li>
+              )}
+            </ul>
+            <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-navy group-hover:text-brand-saffron transition-colors">
+              View {section.label}
+              <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </span>
+          </a>
+        ))}
+      </div>
     </ContentPage>
   );
 }

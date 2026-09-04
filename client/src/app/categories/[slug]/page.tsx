@@ -1,21 +1,39 @@
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import ContentPage from "@/components/ContentPage";
+import { categoryLinks } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "People | Bharat Knowledge | Open Knowledge Platform",
-  description:
-    "Biographical dossiers of influential figures that shaped India — leaders, scientists, thinkers, and artists.",
-};
+type PageProps = { params: Promise<{ slug: string }> };
 
-export default function PeoplePage() {
+export function generateStaticParams() {
+  return categoryLinks.map((c) => ({
+    slug: c.href.split("/").filter(Boolean)[1],
+  }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const cat = categoryLinks.find((c) => c.href.endsWith("/" + slug));
+  if (!cat) return { title: "Not Found" };
+  return {
+    title: `${cat.label} | Bharat Knowledge | Open Knowledge Platform`,
+    description: `Articles and dossiers in the ${cat.label} category.`,
+  };
+}
+
+export default async function CategorySlugPage({ params }: PageProps) {
+  const { slug } = await params;
+  const cat = categoryLinks.find((c) => c.href.endsWith("/" + slug));
+  if (!cat) notFound();
+
   return (
     <ContentPage
-      eyebrow="People"
-      title="People & Leaders"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      eyebrow="Categories"
+      title={cat.label}
+      description={`${cat.label}. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
     >
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-4">
-        Documenting Lives
+        {cat.label} Overview
       </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
@@ -29,7 +47,7 @@ export default function PeoplePage() {
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-6">
-        From Leaders to Thinkers
+        Featured in {cat.label}
       </h2>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -44,7 +62,7 @@ export default function PeoplePage() {
         sit amet, consectetur, adipisci velit.
       </p>
       <h2 className="font-serif text-2xl font-bold text-brand-navy pt-6">
-        Citation-Verified Profiles
+        Source-Backed Coverage
       </h2>
       <p>
         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis

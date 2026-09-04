@@ -1,28 +1,28 @@
 import Logo from "./Logo";
 
 const taxonomyLinks = [
-  { label: "People & Leaders", href: "/people" },
-  { label: "Polity & Statecraft", href: "/politics" },
-  { label: "Places & Geography", href: "/places" },
-  { label: "Organizations & Institutions", href: "/organizations" },
-  { label: "History & Milestones", href: "/history" },
-  { label: "Culture & Traditions", href: "/culture" },
+  { label: "Explore", href: "/explore" },
+  { label: "People", href: "/explore/people" },
+  { label: "Places", href: "/explore/places" },
+  { label: "Organizations", href: "/explore/organizations" },
+  { label: "History", href: "/explore/history" },
+  { label: "Culture", href: "/explore/culture" },
 ];
 
 const platformLinks = [
-  { label: "About the Project", href: "#" },
-  { label: "Editorial Charter", href: "#" },
-  { label: "Source Standards", href: "#" },
-  { label: "Correction Log", href: "#" },
-  { label: "Linguistic Roadmaps", href: "#" },
+  { label: "Categories", href: "/categories" },
+  { label: "About Bharat Knowledge", href: "/about" },
+  { label: "Our Mission", href: "/about/mission" },
+  { label: "Editorial Principles", href: "/about/editorial-principles" },
+  { label: "Contact", href: "/about/contact" },
 ];
 
 const integrityLinks = [
-  { label: "Verifiable Citations", href: "#" },
-  { label: "Neutrality Guarantee", href: "#" },
-  { label: "Creative Commons CC-BY", href: "#" },
-  { label: "Public Domain Records", href: "#" },
-  { label: "Privacy Policy", href: "#" },
+  { label: "Sources", href: "/sources" },
+  { label: "Government Sources", href: "/sources/government" },
+  { label: "Research & Universities", href: "/sources/research-universities" },
+  { label: "Source Methodology", href: "/sources/methodology" },
+  { label: "How We Verify Information", href: "/about/how-we-verify" },
 ];
 
 export default function Footer() {
