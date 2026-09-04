@@ -1,31 +1,98 @@
-import { Shield } from "lucide-react";
+'use client';
 
-export default function Home() {
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Users, FileText, Eye, Archive } from 'lucide-react';
+import { peopleApi } from '@/lib/api/people';
+
+
+function StatCard({
+  title,
+  count,
+  icon: Icon,
+  href,
+}: {
+  title: string;
+  count: number | null;
+  icon: React.ElementType;
+  href: string;
+}) {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="flex items-center gap-3">
-          <Shield className="w-10 h-10 text-purple-600" />
-          <h1 className="text-4xl font-bold">Admin Dashboard</h1>
+    <Link href={href}>
+      <Card className="transition-colors hover:bg-muted/50 cursor-pointer">
+        <CardHeader className="flex flex-row items-center justify-between pb-2">
+          <CardTitle className="text-sm font-medium text-muted-foreground">
+            {title}
+          </CardTitle>
+          <Icon className="h-4 w-4 text-muted-foreground" />
+        </CardHeader>
+        <CardContent>
+          <div className="text-2xl font-bold">
+            {count !== null ? count : '\u2014'}
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
+  );
+}
+
+export default function DashboardPage() {
+  const [counts, setCounts] = useState<{
+    total: number | null;
+    draft: number | null;
+    review: number | null;
+    published: number | null;
+  }>({
+    total: null,
+    draft: null,
+    review: null,
+    published: null,
+  });
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const [allRes, draftRes, reviewRes, publishedRes] = await Promise.all([
+          peopleApi.list({ limit: 1 }),
+          peopleApi.list({ status: 'draft', limit: 1 }),
+          peopleApi.list({ status: 'review', limit: 1 }),
+          peopleApi.list({ status: 'published', limit: 1 }),
+        ]);
+        setCounts({
+          total: allRes.pagination.total,
+          draft: draftRes.pagination.total,
+          review: reviewRes.pagination.total,
+          published: publishedRes.pagination.total,
+        });
+      } catch {
+        setCounts({ total: null, draft: null, review: null, published: null });
+      }
+    }
+    load();
+  }, []);
+
+  return (
+    <div className="p-6 space-y-6">
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold">Dashboard</h1>
+          <p className="text-muted-foreground text-sm mt-1">
+            Overview of your knowledge base
+          </p>
         </div>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
-          Welcome to the Bharat Knowledge admin panel
-        </p>
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-          </li>
-          <li>Manage content and users from this dashboard</li>
-        </ol>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <p className="text-sm text-gray-500">
-          © 2026 Bharat Knowledge Admin. All rights reserved.
-        </p>
-      </footer>
+        <Button asChild>
+          <Link href="/people/new">+ Add Person</Link>
+        </Button>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <StatCard title="People" count={counts.total} icon={Users} href="/people" />
+        <StatCard title="Draft" count={counts.draft} icon={FileText} href="/people?status=draft" />
+        <StatCard title="Review" count={counts.review} icon={Eye} href="/people?status=review" />
+        <StatCard title="Published" count={counts.published} icon={Archive} href="/people?status=published" />
+      </div>
     </div>
   );
 }
