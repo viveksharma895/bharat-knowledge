@@ -34,12 +34,10 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# dotenv environment files
+# dotenv environment files (never commit real credentials)
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.env.*
+!.env.example
 
 # temp directory
 .temp
@@ -54,9 +52,6 @@ pids
 # Packages
 *.tgz
 .yarn-integrity
-
-# dotenv environment variables file
-.env
 
 # next.js build output
 .next

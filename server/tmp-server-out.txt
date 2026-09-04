@@ -1,0 +1,800 @@
+
+> server@0.1.0 start:dev
+> nest start --watch
+
+[2J[3J[H[[90m7:04:19 pm[0m] Starting compilation in watch mode...
+
+[[90m7:04:22 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +15ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +45ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 27840  - [39m04/09/2026, 7:04:25 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m7:24:06 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:24:07 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +17ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +26ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +18ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 26216  - [39m04/09/2026, 7:24:09 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m7:34:13 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:34:13 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:34:14 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:34:14 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:34:15 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:34:16 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +12ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +29ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +29ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 23132  - [39m04/09/2026, 7:34:18 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m7:34:18 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:34:18 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +25ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +18ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 27536  - [39m04/09/2026, 7:34:21 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m7:46:57 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:46:58 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:46:59 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:46:59 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +17ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +19ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 23672  - [39m04/09/2026, 7:47:02 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m7:48:52 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:48:53 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:48:53 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:48:54 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:48:55 pm[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +14ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +24ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +20ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 21684  - [39m04/09/2026, 7:48:56 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[[90m7:48:56 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:48:56 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m7:48:57 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +16ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +18ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 23448  - [39m04/09/2026, 7:48:59 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m8:00:28 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:00:29 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +21ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +29ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 6972  - [39m04/09/2026, 8:00:31 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m8:00:40 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:00:41 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +24ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +23ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +31ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 15580  - [39m04/09/2026, 8:00:43 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m8:29:07 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:29:08 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +19ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 10760  - [39m04/09/2026, 8:29:10 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m8:38:10 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:38:11 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:38:11 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:38:12 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:38:13 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:38:13 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +17ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +18ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 9056  - [39m04/09/2026, 8:38:16 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m8:38:16 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:38:17 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +11ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +17ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +19ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 20912  - [39m04/09/2026, 8:38:19 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m8:44:46 pm[0m] File change detected. Starting incremental compilation...
+
+[2J[3J[H[[90m8:45:47 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:45:48 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:45:52 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:45:52 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:46:15 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:46:17 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:46:17 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:46:18 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:46:19 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:46:25 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:46:25 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:46:26 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:46:27 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:46:27 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:46:29 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auth/auth.module.ts[0m:[93m20[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType '(configService: ConfigService) => { secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type '(...args: any[]) => JwtModuleOptions | Promise<JwtModuleOptions>'.
+  Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions | Promise<JwtModuleOptions>'.
+    Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions'.
+      The types of 'signOptions.expiresIn' are incompatible between these types.
+        Type 'string' is not assignable to type 'number | StringValue'.
+
+[7m20[0m       useFactory: (configService: ConfigService) => ({
+[7m  [0m [91m      ~~~~~~~~~~[0m
+
+  [96m../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts[0m:[93m24[0m:[93m5[0m
+    [7m24[0m     useFactory?: (...args: any[]) => Promise<JwtModuleOptions> | JwtModuleOptions;
+    [7m  [0m [96m    ~~~~~~~~~~[0m
+    The expected type comes from property 'useFactory' which is declared here on type 'JwtModuleAsyncOptions'
+
+[[90m8:46:30 pm[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m8:46:36 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auth/auth.module.ts[0m:[93m20[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType '(configService: ConfigService) => { secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type '(...args: any[]) => JwtModuleOptions | Promise<JwtModuleOptions>'.
+  Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions | Promise<JwtModuleOptions>'.
+    Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions'.
+      The types of 'signOptions.expiresIn' are incompatible between these types.
+        Type 'string' is not assignable to type 'number | StringValue'.
+
+[7m20[0m       useFactory: (configService: ConfigService) => ({
+[7m  [0m [91m      ~~~~~~~~~~[0m
+
+  [96m../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts[0m:[93m24[0m:[93m5[0m
+    [7m24[0m     useFactory?: (...args: any[]) => Promise<JwtModuleOptions> | JwtModuleOptions;
+    [7m  [0m [96m    ~~~~~~~~~~[0m
+    The expected type comes from property 'useFactory' which is declared here on type 'JwtModuleAsyncOptions'
+
+[96msrc/scripts/seed-admin.ts[0m:[93m2[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/app.module' or its corresponding type declarations.
+
+[7m2[0m import { AppModule } from '../src/app.module';
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m3[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/auth/auth.service' or its corresponding type declarations.
+
+[7m3[0m import { AuthService } from '../src/auth/auth.service';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m8:46:36 pm[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:46:38 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auth/auth.module.ts[0m:[93m20[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType '(configService: ConfigService) => { secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type '(...args: any[]) => JwtModuleOptions | Promise<JwtModuleOptions>'.
+  Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions | Promise<JwtModuleOptions>'.
+    Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions'.
+      The types of 'signOptions.expiresIn' are incompatible between these types.
+        Type 'string' is not assignable to type 'number | StringValue'.
+
+[7m20[0m       useFactory: (configService: ConfigService) => ({
+[7m  [0m [91m      ~~~~~~~~~~[0m
+
+  [96m../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts[0m:[93m24[0m:[93m5[0m
+    [7m24[0m     useFactory?: (...args: any[]) => Promise<JwtModuleOptions> | JwtModuleOptions;
+    [7m  [0m [96m    ~~~~~~~~~~[0m
+    The expected type comes from property 'useFactory' which is declared here on type 'JwtModuleAsyncOptions'
+
+[96msrc/scripts/seed-admin.ts[0m:[93m2[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/app.module' or its corresponding type declarations.
+
+[7m2[0m import { AppModule } from '../src/app.module';
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m3[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/auth/auth.service' or its corresponding type declarations.
+
+[7m3[0m import { AuthService } from '../src/auth/auth.service';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m8:46:38 pm[0m] Found 3 errors. Watching for file changes.
+
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +40ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +59ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +111ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +8ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +6ms[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 18176  - [39m04/09/2026, 8:46:53 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m
+[2J[3J[H[[90m8:46:56 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auth/auth.module.ts[0m:[93m20[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType '(configService: ConfigService) => { secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type '(...args: any[]) => JwtModuleOptions | Promise<JwtModuleOptions>'.
+  Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions | Promise<JwtModuleOptions>'.
+    Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions'.
+      The types of 'signOptions.expiresIn' are incompatible between these types.
+        Type 'string' is not assignable to type 'number | StringValue'.
+
+[7m20[0m       useFactory: (configService: ConfigService) => ({
+[7m  [0m [91m      ~~~~~~~~~~[0m
+
+  [96m../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts[0m:[93m24[0m:[93m5[0m
+    [7m24[0m     useFactory?: (...args: any[]) => Promise<JwtModuleOptions> | JwtModuleOptions;
+    [7m  [0m [96m    ~~~~~~~~~~[0m
+    The expected type comes from property 'useFactory' which is declared here on type 'JwtModuleAsyncOptions'
+
+[96msrc/scripts/seed-admin.ts[0m:[93m2[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/app.module' or its corresponding type declarations.
+
+[7m2[0m import { AppModule } from '../src/app.module';
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m3[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/auth/auth.service' or its corresponding type declarations.
+
+[7m3[0m import { AuthService } from '../src/auth/auth.service';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m8:46:56 pm[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:47:07 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auth/auth.module.ts[0m:[93m20[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType '(configService: ConfigService) => { secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type '(...args: any[]) => JwtModuleOptions | Promise<JwtModuleOptions>'.
+  Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions | Promise<JwtModuleOptions>'.
+    Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions'.
+      The types of 'signOptions.expiresIn' are incompatible between these types.
+        Type 'string' is not assignable to type 'number | StringValue'.
+
+[7m20[0m       useFactory: (configService: ConfigService) => ({
+[7m  [0m [91m      ~~~~~~~~~~[0m
+
+  [96m../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts[0m:[93m24[0m:[93m5[0m
+    [7m24[0m     useFactory?: (...args: any[]) => Promise<JwtModuleOptions> | JwtModuleOptions;
+    [7m  [0m [96m    ~~~~~~~~~~[0m
+    The expected type comes from property 'useFactory' which is declared here on type 'JwtModuleAsyncOptions'
+
+[96msrc/scripts/seed-admin.ts[0m:[93m2[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/app.module' or its corresponding type declarations.
+
+[7m2[0m import { AppModule } from '../src/app.module';
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m3[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/auth/auth.service' or its corresponding type declarations.
+
+[7m3[0m import { AuthService } from '../src/auth/auth.service';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m8:47:07 pm[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:47:31 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auth/auth.module.ts[0m:[93m20[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType '(configService: ConfigService) => { secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type '(...args: any[]) => JwtModuleOptions | Promise<JwtModuleOptions>'.
+  Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions | Promise<JwtModuleOptions>'.
+    Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions'.
+      The types of 'signOptions.expiresIn' are incompatible between these types.
+        Type 'string' is not assignable to type 'number | StringValue'.
+
+[7m20[0m       useFactory: (configService: ConfigService) => ({
+[7m  [0m [91m      ~~~~~~~~~~[0m
+
+  [96m../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts[0m:[93m24[0m:[93m5[0m
+    [7m24[0m     useFactory?: (...args: any[]) => Promise<JwtModuleOptions> | JwtModuleOptions;
+    [7m  [0m [96m    ~~~~~~~~~~[0m
+    The expected type comes from property 'useFactory' which is declared here on type 'JwtModuleAsyncOptions'
+
+[96msrc/people/admin-people.controller.ts[0m:[93m50[0m:[93m4[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ApiCreatedResponse'.
+
+[7m50[0m   @ApiCreatedResponse({ description: 'Person created successfully' })
+[7m  [0m [91m   ~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m2[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/app.module' or its corresponding type declarations.
+
+[7m2[0m import { AppModule } from '../src/app.module';
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m3[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/auth/auth.service' or its corresponding type declarations.
+
+[7m3[0m import { AuthService } from '../src/auth/auth.service';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m8:47:31 pm[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:47:36 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auth/auth.module.ts[0m:[93m20[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType '(configService: ConfigService) => { secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type '(...args: any[]) => JwtModuleOptions | Promise<JwtModuleOptions>'.
+  Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions | Promise<JwtModuleOptions>'.
+    Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions'.
+      The types of 'signOptions.expiresIn' are incompatible between these types.
+        Type 'string' is not assignable to type 'number | StringValue'.
+
+[7m20[0m       useFactory: (configService: ConfigService) => ({
+[7m  [0m [91m      ~~~~~~~~~~[0m
+
+  [96m../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts[0m:[93m24[0m:[93m5[0m
+    [7m24[0m     useFactory?: (...args: any[]) => Promise<JwtModuleOptions> | JwtModuleOptions;
+    [7m  [0m [96m    ~~~~~~~~~~[0m
+    The expected type comes from property 'useFactory' which is declared here on type 'JwtModuleAsyncOptions'
+
+[96msrc/people/admin-people.controller.ts[0m:[93m50[0m:[93m4[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ApiCreatedResponse'.
+
+[7m50[0m   @ApiCreatedResponse({ description: 'Person created successfully' })
+[7m  [0m [91m   ~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m2[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/app.module' or its corresponding type declarations.
+
+[7m2[0m import { AppModule } from '../src/app.module';
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m3[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/auth/auth.service' or its corresponding type declarations.
+
+[7m3[0m import { AuthService } from '../src/auth/auth.service';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m8:47:37 pm[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:47:59 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auth/auth.module.ts[0m:[93m20[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType '(configService: ConfigService) => { secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type '(...args: any[]) => JwtModuleOptions | Promise<JwtModuleOptions>'.
+  Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions | Promise<JwtModuleOptions>'.
+    Type '{ secret: string; signOptions: { expiresIn: string; }; }' is not assignable to type 'JwtModuleOptions'.
+      The types of 'signOptions.expiresIn' are incompatible between these types.
+        Type 'string' is not assignable to type 'number | StringValue'.
+
+[7m20[0m       useFactory: (configService: ConfigService) => ({
+[7m  [0m [91m      ~~~~~~~~~~[0m
+
+  [96m../node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts[0m:[93m24[0m:[93m5[0m
+    [7m24[0m     useFactory?: (...args: any[]) => Promise<JwtModuleOptions> | JwtModuleOptions;
+    [7m  [0m [96m    ~~~~~~~~~~[0m
+    The expected type comes from property 'useFactory' which is declared here on type 'JwtModuleAsyncOptions'
+
+[96msrc/people/admin-people.controller.ts[0m:[93m50[0m:[93m4[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ApiCreatedResponse'.
+
+[7m50[0m   @ApiCreatedResponse({ description: 'Person created successfully' })
+[7m  [0m [91m   ~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m2[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/app.module' or its corresponding type declarations.
+
+[7m2[0m import { AppModule } from '../src/app.module';
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m3[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/auth/auth.service' or its corresponding type declarations.
+
+[7m3[0m import { AuthService } from '../src/auth/auth.service';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m8:48:04 pm[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:48:08 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/people/admin-people.controller.ts[0m:[93m50[0m:[93m4[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ApiCreatedResponse'.
+
+[7m50[0m   @ApiCreatedResponse({ description: 'Person created successfully' })
+[7m  [0m [91m   ~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m2[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/app.module' or its corresponding type declarations.
+
+[7m2[0m import { AppModule } from '../src/app.module';
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m3[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/auth/auth.service' or its corresponding type declarations.
+
+[7m3[0m import { AuthService } from '../src/auth/auth.service';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m8:48:08 pm[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:48:16 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/scripts/seed-admin.ts[0m:[93m2[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/app.module' or its corresponding type declarations.
+
+[7m2[0m import { AppModule } from '../src/app.module';
+[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/seed-admin.ts[0m:[93m3[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../src/auth/auth.service' or its corresponding type declarations.
+
+[7m3[0m import { AuthService } from '../src/auth/auth.service';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[[90m8:48:16 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:48:23 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:48:23 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:50:25 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:50:26 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:50:27 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:50:28 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m8:50:29 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:50:30 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +27ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +36ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[2J[3J[H[[90m8:59:50 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m8:59:50 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +14ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +26ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSourcesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClaimsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPeopleModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api/v1}:[39m[38;5;3m +41ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/v1/auth}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPeopleController {/api/v1/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAdminPeopleController {/api/v1/admin/people}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/admin/people, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/admin/people, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/admin/people/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/admin/people/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSourcesController {/api/v1/sources}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClaimsController {/api/v1/claims}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mNestJS application started on http://localhost:3001/api/v1[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mSwagger documentation available at http://localhost:3001/api[39m
+[32m[Nest] 22564  - [39m04/09/2026, 8:59:53 pm [32m    LOG[39m [38;5;3m[Bootstrap] [39m[32mMongoDB connected successfully[39m

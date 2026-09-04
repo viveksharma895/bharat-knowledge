@@ -1,0 +1,68 @@
+node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module './dto/login.dto'
+Require stack:
+- D:\bharat-knowledge\server\dist\src\auth\auth.controller.js
+- D:\bharat-knowledge\server\dist\src\auth\auth.module.js
+- D:\bharat-knowledge\server\dist\src\people\people.module.js
+- D:\bharat-knowledge\server\dist\src\app.module.js
+- D:\bharat-knowledge\server\dist\src\main.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\bharat-knowledge\server\src\auth\auth.controller.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\bharat-knowledge\\server\\dist\\src\\auth\\auth.controller.js',
+    'D:\\bharat-knowledge\\server\\dist\\src\\auth\\auth.module.js',
+    'D:\\bharat-knowledge\\server\\dist\\src\\people\\people.module.js',
+    'D:\\bharat-knowledge\\server\\dist\\src\\app.module.js',
+    'D:\\bharat-knowledge\\server\\dist\\src\\main.js'
+  ]
+}
+
+Node.js v22.15.1
+[31m[Nest] 20888  - [39m04/09/2026, 8:50:38 pm [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39mUnknownDependenciesException [Error]: Nest can't resolve dependencies of the JwtAuthGuard (?). Please make sure that the argument AuthModuleOptions at index [0] is available in the PeopleModule module.
+
+Potential solutions:
+- Is PeopleModule a valid NestJS module?
+- If AuthModuleOptions is a provider, is it part of the current PeopleModule?
+- If AuthModuleOptions is exported from a separate @Module, is that module imported within PeopleModule?
+  @Module({
+    imports: [ /* the Module containing AuthModuleOptions */ ]
+  })
+
+For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+    at Injector.lookupComponentInParentModules (file:///D:/bharat-knowledge/node_modules/[4m@nestjs[24m/core/injector/injector.js:313:19)
+    at async resolveParam (file:///D:/bharat-knowledge/node_modules/[4m@nestjs[24m/core/injector/injector.js:149:38)
+    at async Promise.all (index 0)
+    at async Injector.resolveConstructorParams (file:///D:/bharat-knowledge/node_modules/[4m@nestjs[24m/core/injector/injector.js:181:27)
+    at async Injector.loadInstance (file:///D:/bharat-knowledge/node_modules/[4m@nestjs[24m/core/injector/injector.js:75:13)
+    at async Injector.loadInjectable (file:///D:/bharat-knowledge/node_modules/[4m@nestjs[24m/core/injector/injector.js:102:9)
+    at async file:///D:/bharat-knowledge/node_modules/[4m@nestjs[24m/core/injector/instance-loader.js:81:13
+    at async Promise.all (index 1)
+    at async InstanceLoader.createInstancesOfInjectables (file:///D:/bharat-knowledge/node_modules/[4m@nestjs[24m/core/injector/instance-loader.js:80:9)
+    at async file:///D:/bharat-knowledge/node_modules/[4m@nestjs[24m/core/injector/instance-loader.js:42:13 {
+  type: [32m'JwtAuthGuard'[39m,
+  context: {
+    index: [33m0[39m,
+    dependencies: [
+      [36m[class AuthModuleOptions][39m
+    ],
+    name: [36m[class AuthModuleOptions][39m
+  },
+  metadata: {
+    id: [32m'cc791c3349fcad96c2a5a'[39m
+  },
+  moduleRef: {
+    id: [32m'9f6e648df4c7da80a3508'[39m
+  }
+}
