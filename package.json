@@ -1,0 +1,14 @@
+{
+  "name": "bharat-knowledge",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "admin"
+  ],
+  "scripts": {
+    "dev:client": "npm --workspace client run dev",
+    "dev:server": "npm --workspace server run start:dev",
+    "dev:admin": "npm --workspace admin run dev"
+  }
+}
